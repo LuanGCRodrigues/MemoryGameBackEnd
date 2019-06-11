@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MemoryGame.Core.DAL;
 using Microsoft.AspNetCore.Mvc;
 using MemoryGame.BusinessLogic;
 
@@ -10,11 +9,11 @@ namespace MemoryGame.Api.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
-  public class ValuesController : ControllerBase
+  public class UserController : ControllerBase
   {
     private readonly Teste blTeste;
 
-    public ValuesController(Teste BlTeste)
+    public UserController(Teste BlTeste)
     {
       blTeste = BlTeste;
     }

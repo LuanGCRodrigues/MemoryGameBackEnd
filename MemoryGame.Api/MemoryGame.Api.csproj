@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MemoryGame.Core\MemoryGame.Core.csproj" />
     <ProjectReference Include="..\MemoryGame.BusinessLogic\MemoryGame.BusinessLogic.csproj" />
+    <ProjectReference Include="..\MemoryGame.Shared\MemoryGame.Shared.csproj" />
   </ItemGroup>
 
 </Project>
