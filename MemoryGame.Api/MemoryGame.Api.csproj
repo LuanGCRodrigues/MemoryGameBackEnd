@@ -10,4 +10,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MemoryGame.Core\MemoryGame.Core.csproj" />
+    <ProjectReference Include="..\MemoryGame.BusinessLogic\MemoryGame.BusinessLogic.csproj" />
+  </ItemGroup>
+
 </Project>
