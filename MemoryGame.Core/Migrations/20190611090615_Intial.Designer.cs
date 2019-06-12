@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MemoryGame.Core.Migrations
 {
     [DbContext(typeof(MemoryGameContext))]
-    [Migration("20190610222832_Inital")]
-    partial class Inital
+    [Migration("20190611090615_Intial")]
+    partial class Intial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -47,6 +47,8 @@ namespace MemoryGame.Core.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Email");
+
+                    b.Property<bool>("IsDeleted");
 
                     b.Property<string>("Name");
 

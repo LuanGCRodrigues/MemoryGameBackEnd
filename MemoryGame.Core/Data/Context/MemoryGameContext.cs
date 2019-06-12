@@ -3,13 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MemoryGame.Core.Data.Context
 {
-  public class MemoryGameContext : DbContext
-  {
-    public MemoryGameContext(DbContextOptions<MemoryGameContext> options) : base(options)
-    { }
+    public class MemoryGameContext : DbContext
+    {
+        public MemoryGameContext(DbContextOptions<MemoryGameContext> options) : base(options)
+        { }
 
-    DbSet<User> Users { get; set; }
-    DbSet<Score> Scores { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Score> Scores { get; set; }
 
-  }
+    }
 }

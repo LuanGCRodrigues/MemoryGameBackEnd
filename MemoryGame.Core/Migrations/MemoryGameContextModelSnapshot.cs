@@ -46,6 +46,8 @@ namespace MemoryGame.Core.Migrations
 
                     b.Property<string>("Email");
 
+                    b.Property<bool>("IsDeleted");
+
                     b.Property<string>("Name");
 
                     b.Property<string>("Password");
